@@ -1,0 +1,285 @@
+/* ==========================================
+   PIN PAGE
+========================================== */
+
+#pin-page{
+
+    width:100%;
+    height:100vh;
+
+    background:#FAEBD7;
+
+    justify-content:center;
+    align-items:center;
+
+}
+
+/* ==========================================
+   OVERLAY
+========================================== */
+
+#pin-page .overlay{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+
+}
+
+/* ==========================================
+   PIN CARD
+========================================== */
+
+.pin-card{
+
+    width:430px;
+    max-width:95%;
+
+    padding:50px 40px;
+
+    background:rgba(255,255,255,.70);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:25px;
+
+    border:1px solid rgba(255,255,255,.8);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+    text-align:center;
+
+}
+
+/* ==========================================
+   HEART
+========================================== */
+
+.heart{
+
+    font-size:60px;
+
+    margin-bottom:10px;
+
+    animation:heartBeat 1.5s infinite;
+
+}
+
+@keyframes heartBeat{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.2);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.pin-card h1{
+
+    color:#5C4033;
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+}
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.pin-card p{
+
+    color:#7B5E57;
+
+    line-height:1.6;
+
+    font-size:16px;
+
+}
+
+/* ==========================================
+   PIN BOX
+========================================== */
+
+.pin-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-top:35px;
+
+}
+
+/* ==========================================
+   INPUT
+========================================== */
+
+.pin-box input{
+
+    width:58px;
+
+    height:65px;
+
+    border-radius:14px;
+
+    border:2px solid #D9B99B;
+
+    background:white;
+
+    font-size:28px;
+
+    text-align:center;
+
+    color:#5C4033;
+
+    outline:none;
+
+    transition:.25s;
+
+}
+
+.pin-box input:focus{
+
+    border:2px solid #B08968;
+
+    box-shadow:0 0 12px rgba(176,137,104,.35);
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================
+   MESSAGE
+========================================== */
+
+#pin-message{
+
+    display:block;
+
+    margin-top:25px;
+
+    min-height:24px;
+
+    color:#A0522D;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   SHAKE ANIMATION
+========================================== */
+
+.shake{
+
+    animation:shake .35s;
+
+}
+
+@keyframes shake{
+
+    0%{
+
+        transform:translateX(0);
+
+    }
+
+    20%{
+
+        transform:translateX(-8px);
+
+    }
+
+    40%{
+
+        transform:translateX(8px);
+
+    }
+
+    60%{
+
+        transform:translateX(-8px);
+
+    }
+
+    80%{
+
+        transform:translateX(8px);
+
+    }
+
+    100%{
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.pin-card{
+
+    padding:40px 25px;
+
+}
+
+.pin-card h1{
+
+    font-size:28px;
+
+}
+
+.pin-box{
+
+    gap:8px;
+
+}
+
+.pin-box input{
+
+    width:48px;
+
+    height:55px;
+
+    font-size:24px;
+
+}
+
+.heart{
+
+    font-size:50px;
+
+}
+
+}

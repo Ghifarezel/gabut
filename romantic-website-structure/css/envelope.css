@@ -1,0 +1,131 @@
+/* ==========================================
+   ENVELOPE PAGE
+========================================== */
+
+#envelope-page{
+
+    width:100%;
+    height:100vh;
+
+    background:#FAEBD7;
+
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.envelope-container{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+/* ==========================================
+   ENVELOPE
+========================================== */
+
+#envelope{
+
+    width:300px;
+
+    animation:floating 2.5s ease-in-out infinite;
+
+    filter:drop-shadow(0 10px 25px rgba(255,170,190,.5));
+
+}
+
+#envelope:hover{
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+   CLICK TEXT
+========================================== */
+
+.click-text{
+
+    margin-top:25px;
+
+    color:#6E4E3A;
+
+    font-size:22px;
+
+    animation:blink 1.2s infinite;
+
+}
+
+@keyframes blink{
+
+50%{
+
+opacity:.3;
+
+}
+
+}
+
+/* ==========================================
+   FLOAT
+========================================== */
+
+@keyframes floating{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+/* ==========================================
+   OPEN
+========================================== */
+
+.open{
+
+    animation:open .8s forwards;
+
+}
+
+@keyframes open{
+
+0%{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:scale(1.4);
+
+opacity:0;
+
+}
+
+}

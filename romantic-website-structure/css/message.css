@@ -1,0 +1,293 @@
+/* ==========================================
+   COUNTDOWN
+========================================== */
+
+#countdown-section{
+
+    margin:80px auto;
+
+    text-align:center;
+
+    width:90%;
+
+    max-width:900px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.1);
+
+}
+
+#countdown-section h2{
+
+    color:#d63384;
+
+    margin-bottom:15px;
+
+}
+
+.counter{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin:35px 0;
+
+}
+
+.counter-box{
+
+    width:110px;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    background:#FFF0F5;
+
+}
+
+.counter-box span{
+
+    display:block;
+
+    font-size:38px;
+
+    font-weight:bold;
+
+    color:#ff4d88;
+
+}
+
+.counter-box small{
+
+    color:#666;
+
+}
+
+.counter-text{
+
+    color:#6E4E3A;
+
+    font-style:italic;
+
+}
+
+/* ==========================================
+   LOVE COUNTDOWN
+========================================== */
+
+#countdown-section{
+
+    display:none;
+
+    width:92%;
+
+    max-width:900px;
+
+    margin:70px auto;
+
+    padding:35px 20px;
+
+    background:white;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+    text-align:center;
+
+    animation:fadeUp .8s;
+
+}
+
+#countdown-section h2{
+
+    color:#d63384;
+
+    font-size:32px;
+
+    margin-bottom:15px;
+
+}
+
+#countdown-section p{
+
+    color:#6E4E3A;
+
+    line-height:1.7;
+
+}
+
+.counter{
+
+    margin:35px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+
+}
+
+.counter-box{
+
+    background:#FFF0F5;
+
+    border-radius:18px;
+
+    padding:20px 10px;
+
+    box-shadow:0 8px 20px rgba(255,105,180,.12);
+
+}
+
+.counter-box span{
+
+    display:block;
+
+    font-size:38px;
+
+    font-weight:bold;
+
+    color:#ff4d88;
+
+}
+
+.counter-box small{
+
+    display:block;
+
+    margin-top:8px;
+
+    font-size:15px;
+
+    color:#666;
+
+}
+
+.counter-text{
+
+    margin-top:20px;
+
+    font-style:italic;
+
+    color:#6E4E3A;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+}
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+#countdown-section{
+
+    padding:25px 15px;
+
+    margin:50px auto;
+
+}
+
+#countdown-section h2{
+
+    font-size:24px;
+
+}
+
+#countdown-section p{
+
+    font-size:15px;
+
+}
+
+.counter{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+.counter-box{
+
+    padding:18px 10px;
+
+}
+
+.counter-box span{
+
+    font-size:30px;
+
+}
+
+.counter-box small{
+
+    font-size:14px;
+
+}
+
+}
+
+/* ==========================================
+   VERY SMALL PHONE
+========================================== */
+
+@media(max-width:420px){
+
+.counter{
+
+    gap:12px;
+
+}
+
+.counter-box{
+
+    padding:15px 8px;
+
+}
+
+.counter-box span{
+
+    font-size:26px;
+
+}
+
+.counter-box small{
+
+    font-size:13px;
+
+}
+
+}
